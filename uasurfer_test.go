@@ -431,6 +431,13 @@ var testUAVars = []struct {
 	//		Browser{BrowserQQ, Version{9,0,0}}, OS{PlatformWindows, OSWindows, Version{7,0,0}}, DeviceComputer}},
 
 	// ANDROID TESTS
+	{"Mozilla/5.0 (Linux; Android 4.4.2; LenovoA3300-GV Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.122 Safari/537.36",
+		UserAgent{
+			Browser{BrowserChrome, Version{35, 0, 1916}}, OS{PlatformLinux, OSAndroid, Version{4, 4, 2}}, DeviceTablet}},
+
+	{"Mozilla/5.0 (Linux; Android 6.0; x96 Build/MHC19J) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Safari/537.36",
+		UserAgent{
+			Browser{BrowserChrome, Version{50, 0, 2661}}, OS{PlatformLinux, OSAndroid, Version{6, 0, 0}}, DeviceTablet}},
 
 	{"Mozilla/5.0 (Linux; U; Android 1.0; en-us; dream) AppleWebKit/525.10+ (KHTML,like Gecko) Version/3.0.4 Mobile Safari/523.12.2",
 		UserAgent{
